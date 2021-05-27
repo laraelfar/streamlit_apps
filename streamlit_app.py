@@ -7,11 +7,11 @@ Created on Tue Jan 26 17:37:38 2021
 
 import streamlit as st
 
-from tensorflow.keras.preprocessing.sequence import pad_sequences 
+from keras.preprocessing.sequence import pad_sequences 
 
-from tensorflow.keras.preprocessing.text import Tokenizer
+from keras.preprocessing.text import Tokenizer
 
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 
 import os
 
@@ -57,7 +57,7 @@ def main():
     
         instance = pad_sequences(liste, padding='post', maxlen=100)
     
-        proba=model.predict(instance)[0][0]
+        proba = model.predict(instance)[0][0]
             
         if proba < 0:
             st.write("Le modèle prédit que le commentaire est négatif à hauteur de:",round(abs(proba))*100,"%")
