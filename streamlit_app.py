@@ -7,11 +7,13 @@ Created on Tue Jan 26 17:37:38 2021
 
 import streamlit as st
 
-from keras.preprocessing.sequence import pad_sequences 
+import tensorflow as tf
 
-from keras.preprocessing.text import Tokenizer
+from tf.keras.preprocessing.sequence import pad_sequences 
 
-from keras.models import load_model
+from tf.keras.preprocessing.text import Tokenizer
+
+from tf.keras.models import load_model
 
 import os
 
