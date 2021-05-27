@@ -9,8 +9,6 @@ import streamlit as st
 
 import tensorflow
 
-import keras 
-
 from keras.preprocessing.sequence import pad_sequences 
 
 from keras.preprocessing.text import Tokenizer
