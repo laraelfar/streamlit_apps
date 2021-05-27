@@ -1,4 +1,3 @@
 streamlit
---upgrade pip
-tensorflow 
-unixodbc-dev
+keras>=2.2.4
+tensorflow==1.15.4
