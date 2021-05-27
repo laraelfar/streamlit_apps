@@ -1,2 +1,4 @@
 streamlit
-keras
+tensorflow 
+pip
+unixodbc-dev
