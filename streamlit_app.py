@@ -9,11 +9,13 @@ import streamlit as st
 
 import tensorflow as tf
 
-from tf.keras.preprocessing.sequence import pad_sequences 
+import keras 
 
-from tf.keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences 
 
-from tf.keras.models import load_model
+from keras.preprocessing.text import Tokenizer
+
+from keras.models import load_model
 
 import os
 
