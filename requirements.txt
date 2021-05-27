@@ -1,3 +1,5 @@
-tensorflow
-os
 streamlit
+keras
+tensorflow.keras.preprocessing.sequence
+tensorflow.keras.preprocessing.text
+tensorflow.keras.models
