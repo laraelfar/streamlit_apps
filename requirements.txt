@@ -1,4 +1,4 @@
 streamlit
+pip --upgrade
 tensorflow 
-pip
 unixodbc-dev
