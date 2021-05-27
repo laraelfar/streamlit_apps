@@ -7,7 +7,7 @@ Created on Tue Jan 26 17:37:38 2021
 
 import streamlit as st
 
-import tensorflow as tf
+import tensorflow
 
 import keras 
 
