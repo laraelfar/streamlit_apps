@@ -6,9 +6,11 @@ Created on Tue Jan 26 17:37:38 2021
 """
 
 import streamlit as st
-from keras.preprocessing.sequence import pad_sequences 
-from keras.preprocessing.text import Tokenizer
-from keras.models import load_model
+
+from tensorflow.keras.preprocessing.sequence import pad_sequences 
+
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.models import load_model
 import os
 
 def main():
@@ -16,6 +18,7 @@ def main():
     st.title("Application Streamlit: Réaliser une analyse de sentiment")
     st.header("Choisissez votre modèle")
     chemin=os.path.dirname(os.path.abspath(__file__))
+    
     def file_selector(chemin):
         filenames = os.listdir(chemin)
         filenames=[f for f in filenames if f.endswith('.' + "h5")]
